@@ -58,11 +58,6 @@
     fill: getColor("blue");
 }
 
-.form-modal-coment__label {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
 .label-modal {
     font-size: 14px;
     margin-left: 40px;
@@ -76,8 +71,7 @@
     margin-right: 40px;
     padding-left: 42px;
     border-radius: 5px;
-    border-color: getColor("darkgrey");
-    border: 0.5px solid;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 
 &:hover {
     border-color: getColor("blue");
@@ -111,7 +105,7 @@
     padding-left: 10px;
     border-radius: 5px;
     border-color: getColor("grey");
-    border: 0.5px solid;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 
 &:hover {
     cursor: pointer;
@@ -129,7 +123,7 @@
     width: 200px;
     height: 50px;
     background-color: getColor("blue");
-    color: getColor("blue");
+    color: getColor("white");
     font-size: 16px;
     text-align: center;
     margin-top: 30px;
@@ -152,5 +146,6 @@
 &__link {
     text-decoration: underline;
     color: getColor("blue");
+    cursor: pointer;
 }
 }
