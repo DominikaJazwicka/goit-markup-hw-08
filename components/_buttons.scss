@@ -39,7 +39,8 @@
     cursor: pointer;
     background-color: getColor("blue");
     border: none;
-    color: getColor("blue");
+    color: getColor("lightgray");
+    text-decoration: getcolor("lightgray");
     text-align: center;
     text-decoration: none;
     display: inline-block;
