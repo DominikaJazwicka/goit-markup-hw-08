@@ -1,23 +1,8 @@
 @import "./utils/vars";
 
 .header {
-    width: 100%;
+    width: auto;
 }
-
-@media screen and (min-width: 480px){
-    .header {
-        max-width: 480px;
-        height: 60px;
-        
-    }
-}
-
-@media screen and (min-width: 768px){
-    .header {
-    max-width: 768px;
-    height: 80px;
-    }
-
     
 .header__active {
     justify-content: center;      
@@ -74,6 +59,10 @@
     justify-content: center;
 }
 
+
+
+
+
 .header__list {
     align-items: center;
     display: flex;
@@ -83,84 +72,9 @@
     padding-bottom: 32px;
 }
 
-.header-contact {
-    padding-left: 250px;
-    display: flex;
-    flex-wrap: wrap;
-
-&__list {
-    align-items: center;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;   
-    padding-bottom: 32px;
-}
-}
-
-.header-contact__item {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-
-.header-contact__link {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    display: inline-flex;
-
-
-&:hover svg { fill: getColor("blue")} 
-}
-
-.header-contact__email {
-    padding-right: 10px;
-    fill: getColor("grey");
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-.header-contact__phone {
-    padding-right: 10px;
-    fill: getColor("grey");
-
-&:hover {
-    fill: getColor("grey");
-}
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px) {
-    .header {
+.header {
         max-width: 1200px;
         height: 80px;
-    }
-
 
 
 .header__active {
@@ -215,68 +129,30 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+}
+
+
+@media screen and (min-width: 1200px){
+
+.header {
+    max-width: 100%;
+    align-items: center;
+
+}
 
 .header__list {
+   margin-right: 0;
+}
+
+.header__nav {
+    margin-top: 25px;
+    font-size: 16px;
     align-items: center;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: center;   
-    padding-bottom: 32px;
-}
+ 
 
-.header-contact {
-    padding-left: 250px;
-    display: flex;
-    flex-wrap: wrap;
-
-&__list {
-    align-items: center;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;   
-    padding-bottom: 32px;
 }
 }
 
-.header-contact__item {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-
-.header-contact__link {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    display: inline-flex;
-
-
-&:hover svg { fill: getColor("blue")} 
-}
-
-.header-contact__email {
-    padding-right: 10px;
-    fill: getColor("grey");
-
-&:hover {
-    fill: getColor("blue");
-}
-}
-.header-contact__phone {
-    padding-right: 10px;
-    fill: getColor("grey");
-
-&:hover {
-    fill: getColor("grey");
-}
-}
-}

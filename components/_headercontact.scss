@@ -1,0 +1,95 @@
+@import "./utils/vars";
+
+
+.header-contact {
+    padding-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+
+&__list {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;   
+    padding-bottom: 32px;
+}
+}
+
+.header-contact__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+
+&:hover {
+    fill: getColor("blue");
+}
+}
+
+.header-contact__link {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    display: inline-flex;
+
+
+&:hover svg { fill: getColor("blue")} 
+}
+
+.header-contact__email {
+    padding-right: 10px;
+    fill: getColor("grey");
+
+&:hover {
+    fill: getColor("blue");
+}
+}
+.header-contact__phone {
+    padding-right: 10px;
+    fill: getColor("grey");
+
+&:hover {
+    fill: getColor("grey");
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+.header-contact__item {
+    transition-duration: 0.5s;
+    display: block;
+
+
+&:hover {
+    fill: getColor("blue");
+}
+}
+
+.header-contact {
+    padding-left: 0;
+    flex-wrap: nowrap;
+    margin-left: 0;
+
+
+&__list {
+    gap: 15px;
+    padding-bottom: 0px;
+    display: block;
+}
+}
+
+.header-contact__link {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+
+&:hover svg { fill: getColor("blue")} 
+}
+}
