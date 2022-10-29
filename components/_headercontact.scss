@@ -1,5 +1,6 @@
 @import "./utils/vars";
 
+@media screen and (min-width: 1200px){
 
 .header-contact {
     padding-left: 250px;
@@ -55,13 +56,14 @@
     fill: getColor("grey");
 }
 }
+}
 
 
 
 
 
 
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 .header-contact__item {
     transition-duration: 0.5s;
     display: block;
