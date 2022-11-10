@@ -115,6 +115,7 @@ html {
 
 .nav__ul-div {
     display: flex;
+    align-items: center;
 }
 
 .header-contact__item {
@@ -159,12 +160,6 @@ html {
 
 
 
-.header-contact__link {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    display: inline-flex;
-}
 
 
 .header-contact__link:hover svg { fill: getColor("blue")} 
@@ -263,19 +258,6 @@ html {
 }
 
 
-@media only screen and (max-width: 1000px) {
-    .nav__ul {
-        width: 100%;
-    }
-
-    .container {
-        width: auto;
-        margin: auto;
-        flex-direction: column;
-        background-color: getColor("white");
-    }
-}
-
 
 @media only screen and (max-width: 988px) {
 
@@ -295,5 +277,20 @@ html {
 
     .nav__ul-div {
         display: block;
+
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .nav__ul {
+        width: 100%;
+    }
+
+    .container {
+        width: auto;
+        margin: auto;
+        flex-direction: column;
+        background-color: getColor("white");
+    }
+}
+
