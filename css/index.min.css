@@ -232,6 +232,10 @@ html {
   transition: 0.3s ease-in-out;
 }
 
+.media-menu-div {
+  display: none;
+}
+
 @media only screen and (max-width: 668px) {
   .header__link-nav-font {
     font-size: 40px;
@@ -255,7 +259,7 @@ html {
     right: 0;
     top: 0;
     background-color: #fff;
-    height: 92vh;
+    height: 99vh;
     transform: translate(100%);
     transition: 0.3s ease-in-out;
   }
@@ -298,13 +302,28 @@ html {
   .header__link-nav {
     text-decoration: none;
     font-size: 40px;
+    padding: 40px;
   }
   .header__link-nav1 {
     text-decoration: none;
     font-size: 36px;
+    padding-top: 40px;
   }
   .header__link-nav_contact {
     font-size: 36px;
+  }
+  .media-menu-div {
+    display: flex;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-left: 13%;
+  }
+  .media-menu {
+    padding: 10px;
+  }
+  .media-menu:hover {
+    color: #2196f3;
+    transition: 0.3s ease-in-out;
   }
 }
 @media only screen and (max-width: 1000px) {

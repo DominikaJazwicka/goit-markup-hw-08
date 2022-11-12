@@ -222,7 +222,9 @@ html {
     transition: .3s ease-in-out;
 }
 
-
+.media-menu-div{
+    display: none;
+}
 
 
 
@@ -256,7 +258,7 @@ html {
         right: 0;
         top: 0;
         background-color: getColor("white");
-        height: 92vh;
+        height: 99vh;
         transform: translate(100%);
         transition: .3s ease-in-out;
     }
@@ -307,18 +309,36 @@ html {
     .header__link-nav {
         text-decoration: none;
         font-size: 40px;
+        padding: 40px;
     }
     .header__link-nav1 {
         text-decoration: none;
         font-size: 36px;
+        padding-top: 40px;
     }
     
     .header__link-nav_contact{
         font-size: 36px;
     }
 
-}
+    .media-menu-div {
+        display: flex;
+        font-size: 16px;
+        margin-top: 10%;
+        margin-left: 13%;
+    }
 
+    .media-menu {
+        padding: 10px;
+
+    }
+
+    .media-menu:hover {
+        color: getColor("blue");
+        transition: .3s ease-in-out;
+    }
+
+}
 
 
 
