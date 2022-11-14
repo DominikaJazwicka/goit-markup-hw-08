@@ -125,6 +125,12 @@
     </form>
 
     </div>
+
+
+
+
+
+
     <section class="container index">
     <ul class="index-list">
     <li>
@@ -136,9 +142,9 @@
             </div>
             
             <h3 class="index-element__paragraf">LOREM IPSUM</h3>
-            <p>
-                Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. 
-                Nam vel arcu sem. <br>Sed non sodales dui. Interdum et malesuada
+            <p class="index__p">
+                Lorem ipsum dolor sit amet,consectetur adipiscing elit. 
+                Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
         </div>
     </li>
@@ -150,9 +156,9 @@
                 </svg>                     
             </div>
             <h3 class="index-element__paragraf">LOREM IPSUM</h3>
-            <p>
-                Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. 
-                Nam vel arcu sem. <br>Sed non sodales dui. Interdum et malesuada
+            <p class="index__p">
+                Lorem ipsum dolor sit amet,consectetur adipiscing elit. 
+                Nam vel arcu sem.Sed non sodales dui. Interdum et malesuada
             </p>
         </div>
     </li>
@@ -164,9 +170,9 @@
                 </svg>  
             </div>
             <h3 class="index-element__paragraf">LOREM IPSUM</h3>
-            <p>
-                Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. 
-                Nam vel arcu sem. <br>Sed non sodales dui. Interdum et malesuada
+            <p class="index__p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
         </div>
     </li>
@@ -178,9 +184,9 @@
                 </svg>  
             </div>
             <h3 class="index-element__paragraf">LOREM IPSUM</h3>
-            <p>
-                Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit. 
-                Nam vel arcu sem. <br>Sed non sodales dui. Interdum et malesuada
+            <p class="index__p">
+                Lorem ipsum dolor sit amet,consectetur adipiscing elit. 
+                Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
         </div>
     </li>
@@ -377,9 +383,13 @@
             </li>
         </ul>
 </section>
+
+
 <footer class="container footer">
-    <section class="footer-page">
+
+
     <ul class="footer__list">
+        <div>
         <li class="footer__element">
             <h2><span class="footer__text">Web</span>Studio</h2>
         </li>
@@ -392,60 +402,73 @@
         <li class="footer__element">
             <a class="footer__link" href="tel:+48111111111"> +48 111 111 111 </a>
         </li>
+    </div>
     </ul>
+
+
     <ul class="footer__join-us">
-        <li><h2><span class="join-us">Dłącz do nas</span></h2>
-            <div class="footer__social-media">
-                <div class="footer-social-media__circle">
+<div>
+        <li><h2 class="join-us">Dłącz do nas</h2>
+        </li>
+
+        <div class="footer__social-media">
+            <li class="footer-social-media__circle">
                     <svg class="footer-social-media__icon" width="20" height="20">
                         <use href="./svg/symbol-defs.svg#instagram"></use>
                     </svg>
-                </div>
-                <div class="footer-social-media__circle">
+                </li>
+
+                <li class="footer-social-media__circle">
                     <svg class="footer-social-media__icon" width="20" height="20">
                         <use href="./svg/symbol-defs.svg#fb"></use>
                     </svg>
-                </div>
-                <div class="footer-social-media__circle">
+                </li>
+
+                <li class="footer-social-media__circle">
                     <svg class="footer-social-media__icon" width="20" height="20">
                         <use href="./svg/symbol-defs.svg#twitter"></use>
                     </svg>
-                </div>
-                <div class="footer-social-media__circle">
+                </li>
+
+                <li class="footer-social-media__circle">
                     <svg class="footer-social-media__icon" width="20" height="20">
                         <use href="./svg/symbol-defs.svg#linkedin"></use>
                     </svg>
-                </div>
-            </div>
-        </li>
+                </li>
+        </div>
+    </div>
         </ul>
-        <ul>
-        <li class="footer__newsletter newsletter">
-        <div>
-            <h2 class="footer__newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</h2>
-            <form name="newsletter" autocomplete="off" novalidate> 
+
+    
+
+        <ul class="footer__newsletter newsletter">
+        <li class="newsletter-list__element"><h2 class="footer__newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</h2>
+        </li>
+
+        <div class="form__div">
+            <li >
+                <div class="footer__newsleter2">
+                <form name="newsletter" autocomplete="off" novalidate> 
                 <input class="footer-input__newsletter" type="email" name="email" placeholder="E-mail"/> 
-                <button type="submit" class="footer__button"><span class="footer__button-text">Zapisz się</span>
+            
+            <!-- <div class="footer-button__div"> -->
+            <button type="submit" class="footer__button"><span class="footer__button-text">Zapisz się</span>
                     <svg class="footer-input__newsletter-icon" width="24" height="24">
                         <use href="./svg/symbol-defs1.svg#icon-send"></use>
                     </svg>
-                </form>
                 </button>
+            </div>
         </div>
         </li>
-    
-   </ul>
-</section>
+            </form>
+        </div>
 
-    
-</footer>
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
+        </ul>
+       
+    </footer>
+
     <script defer src="js/mobile-menu.js"></script>
     <script defer src="js/modal.js"></script>
+
 </body>
 </html>
