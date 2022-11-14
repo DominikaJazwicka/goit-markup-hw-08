@@ -67,3 +67,31 @@
 .portfolio__text {
     margin-left: 20px;
 }
+
+
+
+@media only screen and (max-width: 668px) {
+    .portfolio__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: getColor("blue");
+        opacity: 90%;
+        transform: translateY(100%);
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        z-index: 1;
+    }
+
+    .portfolio__box {
+        overflow: hidden;
+        position: relative;
+        width: 294px;
+        height: 234px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: getColor("grey");
+        z-index: 1;
+    }
+}

@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     background-color: none;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 
@@ -159,6 +159,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    transition-duration: 0.3s;
 }
 
 .newsletter {
@@ -299,9 +300,6 @@
     }
 
 
-    .test99 {
-        display: flex;
-    }
 }
 
 

@@ -75,12 +75,7 @@ html {
     background-color: getColor("blue");
     border-radius: 10px;
     z-index: 9;
-
 }
-
-
-
-
 
 .header {
     max-height: 80px;
@@ -97,6 +92,7 @@ html {
     font-weight: bold;
     font-size: 24px;
     color: getColor("black");
+    transition-duration: 0.3s;
 }
 
 .header__item:hover {
@@ -105,6 +101,7 @@ html {
 
 .header__link {
     color: getColor("blue");
+    transition-duration: 0.3s;
 }
 
 .header__link:hover {
@@ -123,6 +120,7 @@ html {
 
 .header__link-nav_contact{
     padding-left: 10px;
+    transition-duration: 0.3s;
 }
 
 
@@ -153,6 +151,7 @@ html {
     font-size: 14px;
     position: relative;
     color: gerColor("darkgrey");
+    transition-duration: 0.3s;
 }
 
 .header__link-nav1 {
@@ -180,6 +179,7 @@ html {
 .header-contact__email {
     padding-right: 10px;
     fill: getColor("darkgrey");
+    transition-duration: 0.3s;
 
 
 &:hover {
@@ -190,6 +190,7 @@ html {
 .header-contact__phone {
     padding-right: 10px;
     fill: getColor("darkgrey");
+    transition-duration: 0.3s;
 
 &:hover {
     fill: getColor("blue");
@@ -206,6 +207,7 @@ html {
 /* Burger Styling */
 
 .burger {
+    z-index: 4;
     background: transparent;
     border: none;
     outline: none;
@@ -229,6 +231,7 @@ html {
 
 
 @media only screen and (max-width: 668px) {
+
 
     .header__link-nav-font {
         font-size: 40px;
@@ -261,6 +264,7 @@ html {
         height: 99vh;
         transform: translate(100%);
         transition: .3s ease-in-out;
+        z-index: 3;
     }
 
     .nav__ul.active {
@@ -338,6 +342,8 @@ html {
         transition: .3s ease-in-out;
     }
 
+
+
 }
 
 
@@ -349,6 +355,7 @@ html {
 @media only screen and (max-width: 1000px) {
     .nav__ul {
         width: 100%;
+        
     }
 
     .container {
