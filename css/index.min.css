@@ -792,7 +792,6 @@ html {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  transition-duration: 0.3s;
 }
 
 .newsletter {
@@ -836,7 +835,7 @@ html {
   display: flex;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 540px) {
   .footer {
     margin: auto;
     display: flex;
@@ -846,13 +845,13 @@ html {
   }
   .footer__list {
     margin-top: 60px;
-    margin-left: 20%;
+    margin-left: 10%;
     display: flex;
     color: #fff;
   }
   .footer__join-us {
     margin-top: -197px;
-    margin-left: 70%;
+    margin-left: 60%;
     display: flex;
     color: #fff;
   }
@@ -862,7 +861,7 @@ html {
     color: #fff;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .footer {
     margin: auto;
     height: 252px;

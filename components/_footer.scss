@@ -159,7 +159,6 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    transition-duration: 0.3s;
 }
 
 .newsletter {
@@ -206,7 +205,7 @@
 
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 540px) {
 
     .footer {
         margin: auto;
@@ -219,14 +218,14 @@
 
     .footer__list {
         margin-top: 60px;
-        margin-left: 20%;
+        margin-left: 10%;
         display: flex;
         color: getColor("white");
     }
 
     .footer__join-us {
         margin-top: -197px;
-        margin-left: 70%;
+        margin-left: 60%;
         display: flex;
         color: getColor("white");
     }
@@ -242,7 +241,7 @@
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
 
     .footer {
         margin: auto;
