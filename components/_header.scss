@@ -239,7 +239,7 @@ html {
 
     .burger {
         display: block;
-        transition: .3s ease-in-out;
+        transition-duration: 0.3s;
     }
 
     .burger.active .line:first-child {
@@ -263,14 +263,14 @@ html {
         background-color: getColor("white");
         height: 99vh;
         transform: translate(100%);
-        transition: .3s ease-in-out;
+        transition-duration: 0.3s;
         z-index: 3;
     }
 
     .nav__ul.active {
         transform: translate(0%);
         display: block;
-        transition: .3s ease-in-out;
+        transition-duration: 0.3s;
     }
 
     .header__link-nav {

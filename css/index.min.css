@@ -249,7 +249,7 @@ html {
   }
   .burger {
     display: block;
-    transition: 0.3s ease-in-out;
+    transition-duration: 0.3s;
   }
   .burger.active .line:first-child {
     transform: translateY(-300px);
@@ -268,13 +268,13 @@ html {
     background-color: #fff;
     height: 99vh;
     transform: translate(100%);
-    transition: 0.3s ease-in-out;
+    transition-duration: 0.3s;
     z-index: 3;
   }
   .nav__ul.active {
     transform: translate(0%);
     display: block;
-    transition: 0.3s ease-in-out;
+    transition-duration: 0.3s;
   }
   .header__link-nav {
     color: #212121;
@@ -362,7 +362,7 @@ html {
   }
 }
 .backdrop {
-  z-index: 1;
+  z-index: 4;
   position: fixed;
   left: 0;
   top: 0;
@@ -375,6 +375,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 528px;
   min-height: 581px;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -501,29 +502,18 @@ html {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (max-width: 550px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 440px;
+    width: 400px;
     min-height: 581px;
     transform: translate(-50%, -50%);
     background-color: #fff;
   }
   .input-modal {
-    width: 320px;
+    width: 280px;
     height: 38px;
     margin-left: 40px;
     margin-right: 40px;
@@ -533,12 +523,15 @@ html {
   }
   .input-modal__coment {
     margin-left: 40px;
-    width: 350px;
+    width: 310px;
     height: 40px;
     padding-bottom: 100px;
     border-radius: 5px;
     border-color: #AFB1B8;
     border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .Privacy {
+    padding-left: 65px;
   }
 }
 .service-heading__background-photo {
