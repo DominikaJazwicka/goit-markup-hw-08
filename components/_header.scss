@@ -256,7 +256,7 @@ html {
 
 
     .nav__ul {
-        display: block;
+        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -269,6 +269,8 @@ html {
 
     .nav__ul.active {
         transform: translate(0%);
+        display: block;
+        transition: .3s ease-in-out;
     }
 
     .header__link-nav {

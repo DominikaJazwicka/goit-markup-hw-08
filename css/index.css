@@ -261,7 +261,7 @@ html {
     transform: rotate(-320deg) translateY(-10px);
   }
   .nav__ul {
-    display: block;
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -273,6 +273,8 @@ html {
   }
   .nav__ul.active {
     transform: translate(0%);
+    display: block;
+    transition: 0.3s ease-in-out;
   }
   .header__link-nav {
     color: #212121;
@@ -861,7 +863,7 @@ html {
     color: #fff;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1340px) {
   .footer {
     margin: auto;
     height: 252px;
